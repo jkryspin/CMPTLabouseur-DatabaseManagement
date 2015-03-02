@@ -23,3 +23,21 @@ from agents
 where (city != 'New York' and city != 'Tokyo')
 
 --Question 6
+select *
+from products
+where (city != 'Dallas' and city != 'Duluth')and (priceUSD >=1)
+
+--Question 7
+select *
+from orders
+where (mon = 'jan' or mon = 'may')
+
+--Question 8
+select *
+from orders
+where (mon = 'jan' or mon = 'feb') and (dollars>500)
+
+--Question 9
+select *
+from orders
+where cid = 'c005'
