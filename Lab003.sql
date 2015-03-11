@@ -35,7 +35,7 @@ where (mon = 'jan' or mon = 'may')
 --Question 8
 select *
 from orders
-where (mon = 'jan' or mon = 'feb') and (dollars>500)
+where (mon = 'feb') and (dollars>500)
 
 --Question 9
 select *
