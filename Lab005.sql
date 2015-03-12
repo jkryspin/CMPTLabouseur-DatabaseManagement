@@ -38,3 +38,13 @@ from customers inner join agents
 on customers.city = agents.city 
 
 --Question 7
+select distinct customers.name, customers.city
+from customers 
+where city in (select city 
+               from (
+               (select products.city, count(products.city)
+                from products
+                group by products.city
+                limit 1))
+                as Q)
+
